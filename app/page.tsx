@@ -39,6 +39,7 @@ export default function Home() {
       <div className="flex flex-col gap-12 lg:flex-row">
         {games.map((game, index) => (
           <button
+            key={index}
             onClick={() => { router.push(game.link) }}
             className={`bg-[url('/images/cardboard-tex-1.jpg')] w-64 h-40 text-8xl bg-center bg-cover custfont-GameOfSquids ${GameOfSquids.className} hover:bg-orange-300 bg-blend-soft-light transition ease-in-out duration-300`}
 
