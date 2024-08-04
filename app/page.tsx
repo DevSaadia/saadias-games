@@ -37,7 +37,7 @@ export default function Home() {
         {games.map((game, index) => (
           <Link
             key={index}
-            className={`flex items-center justify-center w-64 h-40 text-8xl bg-[url('/images/cardboard-tex-1.jpg')] bg-center bg-cover custfont-GameOfSquids ${GameOfSquids.className}`}
+            className={`flex items-center justify-center w-64 h-40 text-8xl bg-[url("/images/cardboard-tex-1.jpg")] bg-center bg-cover custfont-GameOfSquids ${GameOfSquids.className}`}
             href={game.link}
           >
             {game.symbol}
