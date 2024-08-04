@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from 'next/font/local'
 
+const GameOfSquids = localFont({
+  src: 'fonts/Game-Of-Squids.otf',
+});
 // const GameOfSquids = localFont({
 //   src: '/fonts/Game-Of-Squids.otf',
 
