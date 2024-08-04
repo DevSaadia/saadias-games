@@ -1,6 +1,8 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import localFont from "next/font/local";
+import { useRouter } from "next/navigation";
 
 const GameOfSquids = localFont({
   src: 'fonts/Game-Of-Squids.otf',
@@ -8,6 +10,7 @@ const GameOfSquids = localFont({
 
 
 export default function Home() {
+  const router = useRouter()
 
   const games = [
     {
@@ -35,13 +38,13 @@ export default function Home() {
 
       <div className="flex flex-col gap-12 lg:flex-row">
         {games.map((game, index) => (
-          <Link
-            key={index}
-            className={`flex items-center justify-center w-64 h-40 text-8xl bg-[url("/images/cardboard-tex-1.jpg")] bg-center bg-cover custfont-GameOfSquids ${GameOfSquids.className}`}
-            href={game.link}
+          <button
+            onClick={() => { router.push(game.link) }}
+            className={`bg-[url('/images/cardboard-tex-1.jpg')] w-64 h-40 text-8xl bg-center bg-cover custfont-GameOfSquids ${GameOfSquids.className} hover:bg-orange-300 bg-blend-soft-light transition ease-in-out duration-300`}
+
           >
             {game.symbol}
-          </Link>
+          </button>
         ))}
       </div>
 
