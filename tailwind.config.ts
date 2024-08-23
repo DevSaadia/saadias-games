@@ -17,6 +17,7 @@ const config: Config = {
       //   custom: ["GameOfSquids", "sans-serif"],
       // },
     },
+    backgroundBlendMode: ["responsive"],
   },
   plugins: [],
 };
