@@ -23,14 +23,14 @@ export default function Home() {
     },
     {
       symbol: "}",
-      link: "/whats-the-word",
+      link: "/wordle",
     },
   ]
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-[#C9206B] bg-[url('/images/tex-1.jpg')] bg-blend-screen">
 
 
-      <div id="title" className="mb-24 flex flex-col sm:w-96 md:w-1/2">
+      <div id="title" className="mb-24 flex flex-col sm:w-96 md:w-1/2 ">
         <div>
           <Image src="/images/saadia.png" width={500} height={500} alt={""} />
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
           <button
             key={index}
             onClick={() => { router.push(game.link) }}
-            className={`bg-[url('/images/cardboard-tex-1.jpg')] w-64 h-40 text-8xl bg-center bg-cover custfont-GameOfSquids ${GameOfSquids.className} hover:bg-orange-300 bg-blend-soft-light transition ease-in-out duration-300`}
+            className={`bg-[url('/images/cardboard-tex-1.jpg')] w-64 h-40 text-8xl bg-center bg-cover custfont-GameOfSquids  hover:bg-orange-300 bg-blend-soft-light transition ease-in-out duration-300 shadow-xl ${GameOfSquids.className} `}
 
           >
             {game.symbol}
