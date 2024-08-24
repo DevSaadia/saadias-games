@@ -5,7 +5,7 @@ interface WordleExampleSquareProps {
 }
 const WordleExampleSquare: React.FC<WordleExampleSquareProps> = ({ colour, letter }) => {
     return (
-        console.log(colour),
+
         <div
             style={{ backgroundColor: `#${colour}` }}
             className=

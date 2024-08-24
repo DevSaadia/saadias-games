@@ -22,7 +22,11 @@ const Guess: React.FC<GuessProps> = ({ guess, chosenWord }) => {
         <div className='flex flex-row gap-2 mb-2'>
 
             {
-                letters.map((letter, index) => (<Square key={index} letter={letter} letterStatus={getLetterStatus(letter, index)} />))
+                letters.map((letter, index) => (
+                <Square 
+                key={index} letter={letter} letterStatus={getLetterStatus(letter, index)} 
+                />
+            ))
             }
         </div>
     )

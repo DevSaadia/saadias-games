@@ -17,11 +17,11 @@ const Square: React.FC<SquareProps> = ({ letter, letterStatus }) => {
         }
         switch (letterStatus) {
             case 'correct':
-                return 'bg-green-500';
+                return 'bg-[#19caca]';
             case 'present':
-                return 'bg-yellow-500';
+                return 'bg-[#FFC40C]';
             case 'incorrect':
-                return 'bg-gray-500';
+                return 'bg-[#909090]';
             default:
                 return 'bg-white';
         }
@@ -36,7 +36,6 @@ const Square: React.FC<SquareProps> = ({ letter, letterStatus }) => {
             w-14
             text-2xl
             rounded-md
-            bg-white
             h-14
             border-4 
             border-[#F24C8A]
